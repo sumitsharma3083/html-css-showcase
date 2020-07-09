@@ -49,14 +49,17 @@ body{
 .grid-item{
     background-color: #fff;
     cursor: pointer;
-    -webkit-box-shadow: -7px 3px 111px -33px rgba(0,0,0,1);
-    -moz-box-shadow: -7px 3px 111px -33px rgba(0,0,0,1);
-    box-shadow: -7px 3px 111px -33px rgba(0,0,0,1);
+    -webkit-box-shadow: -2px 6px 11px -4px rgba(0,0,0,0.68);
+    -moz-box-shadow: -2px 6px 11px -4px rgba(0,0,0,0.68);
+    box-shadow: -2px 6px 11px -4px rgba(0,0,0,0.68);
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
 .grid-item:hover{
     transform: scale(1.02);
+    -webkit-box-shadow: -1px 7px 24px -5px rgba(0,0,0,0.68);
+-moz-box-shadow: -1px 7px 24px -5px rgba(0,0,0,0.68);
+box-shadow: -1px 7px 24px -5px rgba(0,0,0,0.68);
 }
 .link-container{
     display: grid;
@@ -67,19 +70,28 @@ body{
   background-color: #3b6978 ; 
   color: #fff ;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 5px;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .preview-link{
     background-color: #84a9ac ; 
     color: #fff ;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     text-transform: capitalize;
     letter-spacing: 5px;
-    padding: 1rem 0;
+    padding: 1rem;
+}
+
+@media(max-width : 980px){
+    .projects-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 3rem;
+    }
 }
